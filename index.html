@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Learn</title>
+    <script type="text/javascript" src="script/tamago.js"></script>
+    <script type="text/javascript" src="script/Crush.js"></script>
+    <script type="text/javascript" src="script/Qtamago.js"></script>
+    <script type="text/javascript" src="script/DoodleJump.js"></script>
+    <script type="text/javascript" src="script/creditos.js"></script>
+    <script>
+        window.onload = function () {
+            var canvas = document.getElementById("jogo");
+
+
+            //Troca
+            window.troca = 0;
+            window.Dindin;
+            var trocaLocal;
+
+            function init() {
+                window.nav = 1;
+                Tamago();
+                trocaLocal = window.troca;
+                main()
+            }
+
+            function main() {
+                window.requestAnimationFrame(main);
+                if (trocaLocal != window.troca) {
+                    switch (window.troca) {
+                    case 0:
+                        Tamago();
+                        trocaLocal = window.troca;
+                        break;
+                    case 1:
+                        Crush();
+                        trocaLocal = window.troca;
+                        break;
+                    case 2:
+                        Quiz();
+                        trocaLocal = window.troca;
+                        break;
+                    case 3:
+                        Doodle()
+                        trocaLocal = window.troca;
+                        break;
+                    	case 4:
+							window.open("index2.html",'_self',false);
+							trocaLocal=window.troca;
+							break;
+                          case 5:
+                        cred();
+                        trocaLocal = window.troca;
+                        break;
+
+                    }
+                }
+            }
+
+            init();
+        }
+    </script>
+    <style>
+        @font-face {
+            font-family: Roboto;
+            src: url(Roboto-Regular.ttf);
+        }
+        
+        @font-face {
+            font-family: RobotoB;
+            src: url(Roboto-Bold.ttf);
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="jogo"></canvas>
+</body>
+
+</html>

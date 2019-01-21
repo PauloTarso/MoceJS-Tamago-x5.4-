@@ -1,0 +1,4655 @@
+{
+    "sceneObjects": [
+        {
+            "type": "SceneObject"
+            , "position": {
+                "x": 0
+                , "y": 0
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "background.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": []
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 480
+                        , "y": 320
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "Background"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -3.5199999999999463
+                , "y": 168.77314586994711
+            }
+            , "rotation": 0
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "static"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 0.5
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": false
+                    , "image": "procedural_square"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": []
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 500
+                        , "y": 30
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "ground"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -260
+                , "y": 4
+            }
+            , "rotation": 0
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0.5
+                        , "angularDamping": 0.4
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 3
+                                , "friction": 0.5
+                                , "restitution": 0.5
+                                , "shapeType": "circle"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {
+                        "explode": {
+                            "type": "Animation"
+                            , "name": "explode"
+                            , "startFrame": 0
+                            , "endFrame": 15
+                            , "numCells": {
+                                "x": 4
+                                , "y": 4
+                            }
+                            , "image": "explosionFull.png"
+                            , "speed": 5
+                            , "looping": false
+                            , "blending": true
+                            , "playMode": "reverse"
+                            , "autoResize": false
+                            , "offset": {
+                                "x": 0
+                                , "y": 0
+                            }
+                            , "stopped": false
+                            , "properties": {}
+                        }
+                    }
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "linfocito.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "mirror"
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 15
+                        , "y": 15
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "ball"
+            , "isTemplate": true
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onUpdate": "function (data)\n{\n}"
+                , "onCollision": "function (data)\n{\r\nvar objects=this.getOverlappingObjects();\r\nvar inimigos = [];\r\nvar Bacteria =wade.getSceneObject(\"Bacteria\");\r\nvar Ameba= wade.getSceneObject(\"Ameba\");\r\nvar Boss= wade.getSceneObject(\"Boss\");\r\n\r\n\r\n\r\n/*◘♣♦◘♣♦◘♣♦◘♣♦◘THE BEHAVIOR TO SET THE REMOVAL OF THE ENEMYS\r\nAND PROPERLY SET THE COLLISION EVENTS*/\r\n\r\nif(!this.isAudioPlaying){\r\n    \r\nwade.playAudio('HemociAttackSounds/Atinge.wav'/*,false,callback()*/);\r\nthis.isAudioPlaying=true;\r\n\r\n}\r\n\r\n//BOOLEAN TO DETECT THAT THE MONSTER HAS BEEN KILLED \r\nif(!wade.app.destruido1 && !wade.app.GAMEOVER){\r\nvar anima1 = Ameba.getSprite().getCurrentAnimationName(Ameba);\r\n}\r\n\r\n if(!wade.app.destruido2 && !wade.app.GAMEOVER){\r\nvar anima2 = Bacteria.getSprite().getCurrentAnimationName(Bacteria);\r\n}\r\n\r\n if(!wade.app.destruido3 && !wade.app.GAMEOVER){\r\nvar anima3 = Boss.getSprite().getCurrentAnimationName(Boss);\r\n\r\n    \r\n} \r\n\r\n\r\n    for (var i=0;i<objects.length;i++){\r\n     \r\n      if(objects[i] == Boss && anima3!=\"explosao\"){\r\n      Boss.getSprite().playAnimation(\"explosao\");\r\n      wade.app.destruido3=true;\r\n      wade.playAudio('HemociAttackSounds/Atinge.wav');\r\n      break;}\r\n   \r\n     else if(objects[i] == Ameba && anima1!=\"explosao\"){\r\n    Ameba.getSprite().playAnimation(\"explosao\");\r\n    wade.app.destruido1=true;\r\n    wade.playAudio('HemociAttackSounds/Atinge.wav');\r\n    break;}\r\n   \r\n    else if(objects[i] == Bacteria && anima2!=\"explosao\"){\r\n    Bacteria.getSprite().playAnimation(\"explosao\");\r\n    wade.app.destruido2=true;\r\n    wade.playAudio('HemociAttackSounds/Atinge.wav');\r\n   break;}\r\n   \r\n    \r\n\r\n        \r\n    \r\n       \r\n}\r\n   \r\n\r\n/*function callback(){\r\n    setTimeout(function() {this.isAudioPlaying=false;}, 50);\r\n    \r\n    \r\n}*/\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n}"
+                , "onAnimationEnd": "function (data)\n{wade.removeSceneObject(this);\n}"
+                , "onAnimationStart": "function (data)\n{if(this!==null && !wade.app.GAMEOVER){\nthis.getBehavior().gravityScale = 0;\nthis.getBehavior().getFixtureList().SetSensor(true);\n\n  \t    wade.playAudio('HemociAttackSounds/Blop.wav');\n  \n    \n}\n\n\n}"
+                , "onAddToScene": "function (data)\n{this.isAudioPlaying=false;\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 6.86999999999993
+                , "y": -104.58852372583469
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "procedural_square"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": true
+                    , "name": ""
+                    , "drawModifiers": []
+                    , "pixelShader": "vec2 uv = uvAlphaTime.xy;\nvec4 color = vec4(1.5*uv.x,1.5*(1.0-uv.x),0.2,uv.x + 0.0001 < value ? 1.0 : 0.0);\ngl_FragColor = mix(color, vec4(1.0,sin(uvAlphaTime.w*25.0),0.0,1.0), floor(value));"
+                    , "pixelShaderUniforms": {
+                        "value": "float"
+                    }
+                    , "properties": {
+                        "value": 0
+                    }
+                    , "size": {
+                        "x": 320
+                        , "y": 7
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "powerBar"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onUpdate": "function (data)\n{var sprite = this.getSprite();\nif(sprite.value<1.3 && wade.isMouseDown( ) && wade.app.Playing===true && !wade.app.GAMEOVER)\n{\n    sprite.value+=0.03;\n    if(!this.isPlayingAudio){\n    wade.playAudio('HemociAttackSounds/Charging.wav');\n   this.isPlayingAudio=true;}\n    sprite.value= sprite.value > 1.0 ? 1.0 : sprite.value;\n     \n}\n\n}"
+                , "onAddToScene": "function (data)\n{wade.loadAudio('HemociAttackSounds/Charging.wav');\nthis.isPlayingAudio=false;\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 269.02999999999975
+                , "y": -12.919999999999934
+            }
+            , "rotation": 0
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "static"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": false
+                    , "image": "procedural_square"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": []
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 57.00679501621832
+                        , "y": 375.91431934864613
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BoundWall"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 59.27
+                , "y": 140
+            }
+            , "rotation": 6.277763602554087
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 0.3
+                        , "linearDamping": 2
+                        , "angularDamping": 1
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 10
+                                , "friction": 3
+                                , "restitution": 0.3
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {
+                        "explosao": {
+                            "type": "Animation"
+                            , "name": "explosao"
+                            , "startFrame": 0
+                            , "endFrame": 13
+                            , "numCells": {
+                                "x": 4
+                                , "y": 4
+                            }
+                            , "image": "explosao.png"
+                            , "speed": 20
+                            , "looping": false
+                            , "blending": false
+                            , "playMode": "forward"
+                            , "autoResize": false
+                            , "offset": {
+                                "x": 0
+                                , "y": 0
+                            }
+                            , "stopped": false
+                            , "properties": {}
+                        }
+                    }
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "estranho.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": "Idle"
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.96
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 27.8779329236452
+                        , "y": 24.221810573003207
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "Bacteria"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onAddToScene": "function (data)\n{\n}"
+                , "onCollision": "function (data)\n{\n}"
+                , "onUpdate": "function (data)\n{\n    \n\n}"
+                , "onAnimationEnd": "function (data)\n{\n    wade.removeSceneObject(this);\n    \n    wade.app.score+=100;\n     wade.app.scoreText.setText('Score:'+wade.app.score);\n}"
+                , "onAnimationStart": "function (data)\n{this.getBehavior().gravityScale = 0;\nthis.getBehavior().getFixtureList().SetSensor(true);\nthis.getSprite().setLayer(1);\n wade.playAudio('HemociAttackSounds/Explosao.wav');\n\n}"
+                , "onAppTimer": "function (data)\n{\nthis.moveTo(60,135,50);\n}"
+                , "onMoveComplete": "function (data)\n{\nthis.moveTo(60,140,50);\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 207.46
+                , "y": 140.82
+            }
+            , "rotation": 0
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 6
+                        , "linearDamping": 1
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 1
+                                , "friction": 0
+                                , "restitution": 0
+                                , "shapeType": "circle"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {
+                        "explosao": {
+                            "type": "Animation"
+                            , "name": "explosao"
+                            , "startFrame": 0
+                            , "endFrame": 31
+                            , "numCells": {
+                                "x": 8
+                                , "y": 4
+                            }
+                            , "image": "explosionAmeba.png"
+                            , "speed": 60
+                            , "looping": false
+                            , "blending": false
+                            , "playMode": "ping-pong"
+                            , "autoResize": false
+                            , "offset": {
+                                "x": 0
+                                , "y": 0
+                            }
+                            , "stopped": false
+                            , "properties": {}
+                        }
+                    }
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "ameba.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": "Idle"
+                    , "drawModifiers": [
+                        {
+                            "type": "mirror"
+						}
+                        , {
+                            "type": "alpha"
+                            , "alpha": 0.5
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 27.555802379783678
+                        , "y": 29.14556020938658
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "Ameba"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onAnimationEnd": "function (data)\n{wade.removeSceneObject(this);\n    \n    wade.app.score+=100;\n    wade.app.scoreText.setText('Score:'+wade.app.score);\n     \n  \n}"
+                , "onAnimationStart": "function (data)\n{this.getBehavior().gravityScale = 0;\nthis.getBehavior().getFixtureList().SetSensor(true);\nthis.getSprite().setLayer(1);\n wade.playAudio('HemociAttackSounds/Explosao.wav');\n}"
+                , "onAppTimer": "function (data)\n{\nthis.moveTo(205,135,5);\n}"
+                , "onSwipeDown": "function (data)\n{\n}"
+                , "onRotationComplete": "function (data)\n{\n}"
+                , "onMoveComplete": "function (data)\n{\nthis.moveTo(205,140,10);\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 134.35999999999999
+                , "y": 131.68
+            }
+            , "rotation": 0
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 0.1
+                        , "linearDamping": 2
+                        , "angularDamping": 1
+                        , "fixedRotation": true
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 3
+                                , "friction": 3
+                                , "restitution": 0.1
+                                , "shapeType": "circle"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {
+                        "explosao": {
+                            "type": "Animation"
+                            , "name": "explosao"
+                            , "startFrame": 0
+                            , "endFrame": 60
+                            , "numCells": {
+                                "x": 9
+                                , "y": 9
+                            }
+                            , "image": "Explosion.png"
+                            , "speed": 60
+                            , "looping": false
+                            , "blending": false
+                            , "playMode": "forward"
+                            , "autoResize": false
+                            , "offset": {
+                                "x": 0
+                                , "y": 0
+                            }
+                            , "stopped": false
+                            , "properties": {}
+                        }
+                    }
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "boss.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": "Idle"
+                    , "drawModifiers": []
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 47.149900151343196
+                        , "y": 37.19603234161518
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "Boss"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onAnimationEnd": "function (data)\n{wade.removeSceneObject(this);\n    \n    //THE SCORE ADD\n    wade.app.score+=300;\n     wade.app.scoreText.setText('Score:'+wade.app.score);\n     this.getBehavior().gravityScale = 0;\n}"
+                , "onAnimationStart": "function (data)\n{this.getSprite().setLayer(1);\nthis.getBehavior().getFixtureList().SetSensor(true);\nthis.getBehavior().gravityScale = 0;\n wade.playAudio('HemociAttackSounds/Explosao.wav');\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+                , "onMoveComplete": "function (data)\n{\n//SOME RANDOM MOVEMENT\n\nthis.moveTo(135,140,15);\n\n}"
+                , "onUpdate": "function (data)\n{\n\n}"
+                , "onAppTimer": "function (data)\n{\nthis.moveTo(135,135,10);\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -147.24999999999997
+                , "y": 141.6100000000001
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 1
+                        , "y": 0
+                    }
+                    , "layer": 1
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "CanonBase.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": "base"
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.9
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 25.57132324641771
+                        , "y": 28.07845022751245
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "CanonBase"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -220.90000000000023
+                , "y": 130.02000000000012
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {
+                        "mecheMeche": {
+                            "type": "Animation"
+                            , "name": "mecheMeche"
+                            , "startFrame": 0
+                            , "endFrame": 4
+                            , "numCells": {
+                                "x": 5
+                                , "y": 1
+                            }
+                            , "image": "SpriteSheet.png"
+                            , "speed": 5
+                            , "looping": false
+                            , "blending": false
+                            , "playMode": "forward"
+                            , "autoResize": false
+                            , "offset": {
+                                "x": 0
+                                , "y": 0
+                            }
+                            , "stopped": false
+                            , "properties": {}
+                        }
+                    }
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "hemocinho.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": []
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 27.603015530914647
+                        , "y": 50.75773847484927
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "Hemoci"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onClick": "function (data)\n{\n}"
+                , "onMouseMove": "function (data)\n{return true;\n}"
+                , "onMouseUp": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 204.88999999999996
+                , "y": 70.1900000000001
+            }
+            , "rotation": 11
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 2
+                                , "friction": 10
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 11
+                        , "y": 70
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura17"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 61.5399999999999
+                , "y": 24.63000000000002
+            }
+            , "rotation": 11
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 1
+                                , "friction": 100
+                                , "restitution": 0
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 10
+                        , "y": 65
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura16"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -174.32000000000008
+                , "y": 149.05999999999995
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "linfocito.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.8
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 14
+                        , "y": 14
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "Bala1"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -199.26000000000008
+                , "y": 148.67000000000016
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "linfocito.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 1
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 14
+                        , "y": 14
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "Bala3"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -186.29
+                , "y": 148.5
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "linfocito.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.8
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 14
+                        , "y": 14
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "Bala2"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -192.70999999999998
+                , "y": 136.96
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "linfocito.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.9
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 14
+                        , "y": 14
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "Bala5"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -181.0300000000002
+                , "y": 137.30000000000013
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "linfocito.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.9
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 14
+                        , "y": 14
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "Bala4"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -187.29000000000002
+                , "y": 125.12
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "linfocito.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": []
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 14
+                        , "y": 14
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "Bala6"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 0
+                , "y": 0
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 1
+                        , "y": 0
+                    }
+                    , "layer": 1
+                    , "autoResize": false
+                    , "visible": false
+                    , "image": "GameOver.jpg"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 480
+                        , "y": 320
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "GameOver"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 63.08
+                , "y": 3.3500000000002315
+            }
+            , "rotation": -2.5
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 5
+                                , "friction": 1
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 5
+                        , "y": 37
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura1"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 60.829999999999984
+                , "y": 72.66000000000007
+            }
+            , "rotation": 11
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 2
+                                , "friction": 10
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 11
+                        , "y": 70
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura2"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 182.35999999999981
+                , "y": 48.61000000000018
+            }
+            , "rotation": 0
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 2
+                                , "friction": 1
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 12
+                        , "y": 35
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura3"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 207.84999999999965
+                , "y": 24.890000000000068
+            }
+            , "rotation": 11
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 2
+                                , "friction": 1
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 10
+                        , "y": 65
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura4"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 88.94000000000001
+                , "y": 116.01999999999998
+            }
+            , "rotation": 0.003631212605546885
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 2
+                                , "friction": 1
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 12
+                        , "y": 80
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura5"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 135.88000000000002
+                , "y": -37.869999999999905
+            }
+            , "rotation": 11
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 0.5
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 3
+                                , "friction": 1
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.67
+						}
+                        , {
+                            "type": "mirror"
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 12
+                        , "y": 120
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura6"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 87.79
+                , "y": 48.25
+            }
+            , "rotation": 0
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 4
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 8
+                                , "friction": 1
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 12
+                        , "y": 35
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura7"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 34.20999999999971
+                , "y": 47.0400000000001
+            }
+            , "rotation": 0.003631212605546885
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 5
+                                , "friction": 1
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 12
+                        , "y": 35
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura8"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 85.59999999999974
+                , "y": -5.779999999999899
+            }
+            , "rotation": 0.003631212605546885
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 0.5
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 8
+                                , "friction": 1
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 12
+                        , "y": 50
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura9"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 204.51999999999998
+                , "y": 2.5199999999999996
+            }
+            , "rotation": 2.5
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 5
+                                , "friction": 1
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 5
+                        , "y": 37
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura10"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 182.81999999999982
+                , "y": -5.669999999999839
+            }
+            , "rotation": 0
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 2
+                                , "friction": 1
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 12
+                        , "y": 50
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura11"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 31.990000000000002
+                , "y": 118.48
+            }
+            , "rotation": 0
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 2
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 3
+                                , "friction": 10
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 12
+                        , "y": 80
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura12"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 233.28999999999985
+                , "y": 47.69999999999998
+            }
+            , "rotation": 0
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 2
+                                , "friction": 1
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 12
+                        , "y": 35
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura13"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 232.83999999999966
+                , "y": 115.38999999999997
+            }
+            , "rotation": 0
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 3
+                                , "friction": 1
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 12
+                        , "y": 80
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura14"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 179.0599999999997
+                , "y": 113.9199999999999
+            }
+            , "rotation": 0
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "dynamic"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 2
+                                , "friction": 1
+                                , "restitution": 0.01
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+                , {
+                    "name": "GordurinhasBehavior"
+                    , "properties": {}
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "gordura.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.7
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 12
+                        , "y": 80
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BarraDeGordura15"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onCollision": "function (data)\n{\n}"
+                , "onAddToScene": "function (data)\n{\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -117.43999999999994
+                , "y": 89.99999999999994
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 1
+                        , "y": 0
+                    }
+                    , "layer": 1
+                    , "autoResize": false
+                    , "visible": false
+                    , "image": "menu.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 1
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 100
+                        , "y": 100
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "menu"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onClick": "function (data)\n{\nwade.pauseSimulation();\n\nwade.clearScene();\nwade.app.GAMEOVER=true;\nQuiz();\r\n\n}"
+                , "onAddToScene": "function (data)\n{wade.loadAudio('HemociAttackSounds/ButtonBeep.wav');\n\n}"
+                , "onMouseDown": "function (data)\n{wade.playAudio('HemociAttackSounds/ButtonBeep.wav');\n\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 127.51999999999992
+                , "y": 87.9199999999999
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 1
+                        , "y": 0
+                    }
+                    , "layer": 1
+                    , "autoResize": false
+                    , "visible": false
+                    , "image": "reset.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 1
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 100
+                        , "y": 100
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "restart"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onClick": "function (data)\n{wade.removeSceneObject(wade.app.pontuacaoCena);\n\nwade.app.GAMEOVER=true;\nwade.clearScene();\n\nsetTimeout(function()\n{\n     wade.app.init();\n}, 100);\n\n}"
+                , "onAddToScene": "function (data)\n{wade.loadAudio('HemociAttackSounds/ButtonBeep.wav');\n\n}"
+                , "onMouseDown": "function (data)\n{wade.playAudio('HemociAttackSounds/ButtonBeep.wav');\n\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -147.99999999999997
+                , "y": 127.07999999999998
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "Canhao.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": []
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 65.85777728224265
+                        , "y": 38.41703674797488
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "cannon"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 4.3799999999999955
+                , "y": 13.869999999999997
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 1
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "Play.png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.8
+						}
+                        , {
+                            "type": "additive"
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 171
+                        , "y": 171
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "SceneObject_0"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+            , "functions": {
+                "onClick": "function (data)\n{\n}"
+                , "onMouseDown": "function (data)\n{wade.playAudio('HemociAttackSounds/PlayBeep.wav');\n        \n\n}"
+                , "onMouseUp": "function (data)\n{wade.removeSceneObject(this);\n\nsetTimeout(function() {wade.app.Playing=true;\n}, 100);\n\n\n}"
+                , "onAddToScene": "function (data)\n{        wade.loadAudio('HemociAttackSounds/PlayBeep.wav');\r\n\n}"
+            }
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -166.7000000000001
+                , "y": -133.28999999999994
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": true
+                    , "image": "caixa(pontos).png"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": [
+                        {
+                            "type": "alpha"
+                            , "alpha": 0.6
+						}
+                        , {
+                            "type": "additive"
+						}
+					]
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 148.65770144730857
+                        , "y": 44.896214742902295
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "ScoreBack"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": 0
+                , "y": 0
+            }
+            , "rotation": 0
+            , "behaviors": []
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 1
+                    , "autoResize": false
+                    , "visible": false
+                    , "image": "veins.jpg"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": []
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 480
+                        , "y": 320
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "veins"
+            , "isTemplate": false
+            , "path": ""
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -2.069999999999945
+                , "y": -170.52685413005307
+            }
+            , "rotation": 0
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "static"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 0.5
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": false
+                    , "image": "procedural_square"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": []
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 500
+                        , "y": 30
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "ground_clone0"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+        , {
+            "type": "SceneObject"
+            , "position": {
+                "x": -271.8200000000006
+                , "y": -5.66999999999993
+            }
+            , "rotation": 0
+            , "behaviors": [
+                {
+                    "name": "PhysicsObject"
+                    , "properties": {
+                        "bodyType": "static"
+                        , "bullet": false
+                        , "gravityScale": 1
+                        , "linearDamping": 0
+                        , "angularDamping": 0
+                        , "fixedRotation": false
+                        , "allowSleeping": true
+                        , "active": true
+                        , "fixtures": {
+                            "0": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                            , "isPseudoArray": true
+                            , "length": 1
+                            , "elementTemplate": {
+                                "density": 1
+                                , "friction": 0.5
+                                , "restitution": 1
+                                , "shapeType": "box"
+                                , "spriteIndex": 0
+                                , "isSensor": false
+                                , "autoCalculateShape": true
+                                , "filter": {
+                                    "groupIndex": 0
+                                    , "categoryBits": 1
+                                    , "maskBits": 65535
+                                }
+                                , "offset": {
+                                    "x": 0
+                                    , "y": 0
+                                    , "ang": 0
+                                }
+                                , "vertices": [
+                                    {
+                                        "x": 0
+                                        , "y": 0
+									}
+								]
+                            }
+                        }
+                    }
+				}
+			]
+            , "sprites": [
+                {
+                    "type": "Sprite"
+                    , "animations": {}
+                    , "currentAnimation": "default"
+                    , "sortPoint": {
+                        "x": 0
+                        , "y": 0
+                    }
+                    , "layer": 2
+                    , "autoResize": false
+                    , "visible": false
+                    , "image": "procedural_square"
+                    , "imageArea": {
+                        "minX": 0
+                        , "minY": 0
+                        , "maxX": 1
+                        , "maxY": 1
+                    }
+                    , "alwaysDraw": false
+                    , "name": ""
+                    , "drawModifiers": []
+                    , "pixelShader": ""
+                    , "pixelShaderUniforms": null
+                    , "properties": {}
+                    , "size": {
+                        "x": 57.00679501621832
+                        , "y": 375.91431934864613
+                    }
+				}
+			]
+            , "spriteOffsets": [
+                {
+                    "x": 0
+                    , "y": 0
+                    , "angle": 0
+				}
+			]
+            , "alignment": {
+                "x": "center"
+                , "y": "center"
+            }
+            , "name": "BoundWall_clone0"
+            , "isTemplate": false
+            , "addToScene": {
+                "autoListen": true
+                , "params": null
+            }
+            , "properties": {}
+		}
+	]
+    , "paths": []
+    , "layers": [
+		null
+        , {
+            "scaleFactor": 1
+            , "translateFactor": 1
+            , "renderMode": "webgl"
+            , "useQuadtree": true
+            , "resolutionFactor": 1
+		}
+        , {
+            "scaleFactor": 1
+            , "translateFactor": 1
+            , "renderMode": "webgl"
+            , "useQuadtree": true
+            , "resolutionFactor": 1
+		}
+	]
+    , "minScreenSize": {
+        "x": 480
+        , "y": 320
+    }
+    , "maxScreenSize": {
+        "x": 1024
+        , "y": 768
+    }
+    , "orientation": "none"
+    , "windowMode": "full"
+    , "defaultLayer": 1
+    , "scripts": [
+		"wade.physics.js"
+		, "GordurinhasBehavior.js"
+	]
+    , "fonts": []
+    , "loadGlTextures": false
+    , "webAudioOnly": false
+}
